@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>by Rewat</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 40px;
+    height: auto;
+}
+
+.font {
+    font-size: 25px;
+    font-family: 'helvetica', sans-serif;
+}
+
+.THB {
+    font-family: 'helvetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border-bottom: 0.2px solid gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    /* height: 60px; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    margin-left: 5px;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+}
+
+.function p {
+    margin-left: 40px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.function p:hover {
+    color: white;
+    background-color: #bfc1c2;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login p:hover{
+    color: white;
+    background-color: #bfc1c2;
+}
+.P1 {
+    width: 20.25px;
+    height: auto;
+}
+
+.P2 {
+    width: 30px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.line-break {
+    background: gray;
+    width: 0.5px;
+    height: 45px;
+    align-items: center;
+}
+
+.area-top {
+    
+    height: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.area-top p {
+    margin-left: 8%;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
+}
+
+.area-left {
+    height: 530px;
+    width: 630px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.Docs {
+    border-radius: 20px;
+    height: 250px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.bin {
+    border-radius: 125px;
+    border: 2.5px solid #33FF99;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.bin img {
+    height: auto;
+    width: 20px;
+}
+
+.file1 {
+    border-radius: 20px;
+    height: 175px;
+    width: 175px;
+    background: rgb(73, 109, 255);
+    background: linear-gradient(27deg, rgba(73, 109, 255, 1) 9%, rgba(86, 119, 252, 1) 23%, rgba(29, 146, 253, 1) 40%, rgba(51, 148, 249, 1) 61%, rgba(41, 138, 255, 1) 86%);
+    align-items: baselines;
+}
+
+.file {
+    border-radius: 10px;
+    background-color: white;
+    width: 42.5px;
+    height: 42.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.file img {
+    width: 70%;
+    height: auto;
+}
+
+.file1 b {
+    font-size: 16.5px;
+    color: white;
+}
+
+.file1 p {
+    font-size: 12.5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+}
+
+.Google {
+    border-radius: 20px;
+    height: 175px;
+    width: 175px;
+    align-items: baselines;
+    margin: 15px;
+}
+
+.Google p {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.nav {
+    margin-top: 10px;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70px;
+}
+
+select {
+    border: none;
+}
+
+select:focus {
+    border: 2px solid #33FF99;
+    outline: none;
+}
+
+.status-circle-container {
+    display: flex;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.status-circle {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(143, 140, 140, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-level-1 {
+    background-color: #33FF99;
+}
+
+.circle-level-2,
+.circle-level-3 {
+    background-color: rgba(143, 140, 140, 0.2);
+}
+
+.Google .THB p {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.Slides {
+    
+    border-radius: 20px;
+    height: 250px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.file2 {
+    border-radius: 20px;
+    height: 175px;
+    width: 175px;
+    background: rgb(255, 153, 0);
+    background: linear-gradient(34deg, rgba(255, 153, 0, 1) 35%, rgba(253, 247, 29, 1) 74%, rgba(255, 153, 0, 1) 97%);
+    align-items: baselines;
+}
+
+.file2 b {
+    font-size: 16.5px;
+    color: white;
+}
+
+.file2 p {
+    font-size: 12.5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+}
+
+.nav2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70px;
+}
+
+.status-circle-container2 {
+    display: flex;
+    margin-right: 3px;
+    gap: 5px;
+}
+
+.status-circle2 {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(143, 140, 140, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-level2-1 {
+    background-color: #33FF99;
+}
+
+.circle-level2-2,
+.circle-level2-3,
+.circle-level2-4 {
+    background-color: rgba(143, 140, 140, 0.2);
+}
+
+.area-right {
+    height: 430px;
+    width: 590px;
+    border: 1.8px solid rgba(143, 140, 140, 0.4);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    margin-left: 20px;
+}
+
+.right-area {
+    
+    margin: 40px;
+}
+
+.right0 {
+    font-size: 23px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.right1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right1 p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.362);
+}
+
+.right1 b {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.784);
+}
+
+.right2 {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.right2 img {
+    width: 25px;
+    height: auto;
+    margin-right: 15px;
+}
+
+input[type="text"] {
+    padding: 10px 55px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgba(143, 140, 140, 0.5);
+    margin-right: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: rgba(143, 140, 140, 0.5);
+    outline: none;
+}
+
+input[type="text"].has-value {
+    color: #333;
+}
+
+.apply-button {
+    background-color: white;
+    border: 2px solid #02c69c;
+    color: #02c69c;
+    padding: 10px 45px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.apply-button:hover{
+    background-color: #33FF99;
+    color: white;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgba(143, 140, 140, 0.05);
+}
+
+.right3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right3 .font p {
+    font-size: 20px;
+}
+
+.right3 .THB b {
+    font-size: 30px;
+    color: #02c69c;
+}
+
+.apply-button2 {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #02c69c;
+    border: none;
+    color: black;
+    padding: 15px 170px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.apply-button2:hover{
+    background-color: #02c69c;
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+    .function p {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .area-top {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .area-top p {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area-left {
+        height: 530px;
+        width: 630px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area-right {
+        height: 430px;
+        width: 590px;
+        border: 1.8px solid rgba(143, 140, 140, 0.4);
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 950px) {
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        border-bottom:none;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .function {
+        position: absolute;
+        margin-top: 40px;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        border-bottom: 0.2px solid gray;
+
+    }
+
+    .function p {
+        margin-left: 25px;
+        font-size: 20px;
+
+    }
+
+    .area-top {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .area-top p {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area-left {
+        height: 530px;
+        width: 630px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .area-right {
+        height: 430px;
+        width: 590px;
+        border: 1.8px solid rgba(143, 140, 140, 0.4);
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        margin-left: 20px;
+    }
+
+    .line-break {
+        background: gray;
+        width: 0.5px;
+        height: 35px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+    header {
+        border-bottom:none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .function {
+        position: absolute;
+        margin-top: 40px;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        border-bottom: 0.2px solid gray;
+
+    }
+    .login img {
+        display: none;
+    }
+    .function p {
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .area-top {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .area-top p {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area-left {
+        height: 530px;
+        width: 630px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line-break {
+        height: 35px;
+    }
+
+    .Docs {
+        height: 600px;
+        width: 600px;
+        flex-direction: column;
+    }
+
+    .Slides {
+        height: 600px;
+        width: 600px;
+        flex-direction: column;
+    }
+
+    .area-right {
+        width: 470px;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 2050px;
+    }
+
+    input[type="text"] {
+        padding: 10px 25px;
+    }
+
+    .apply-button {
+        padding: 10px 25px;
+    }
+
+    .apply-button2 {
+        padding: 15px 100px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.jobpasscard.com/static/images/new_Jobpasscard/jobpasscard_logo.png" alt="">
+            <p class="font"><b>Job</b></p>
+            <p class="font">Passcard</p>
+        </div>
+        <div class="function">
+            <a href="">
+                <p class="font"><b>ABOUT US</b></p>
+            </a>
+            <a href="">
+                <p class="font"><b>PASSCARD</b></p>
+            </a>
+            <a href="">
+                <p class="font"><b>PROFILE</b></p>
+            </a>
+        </div>
+        <div class="login">
+            <img class="P1" src="./magnifying-glass.png" alt="">
+            <img class="P2" src="https://www.jobpasscard.com/static/images/new_Jobpasscard/cart-icon.png" alt="">
+            <a href="">
+                <p class="font"><b>LOGIN</b></p>
+            </a>
+            <div class="line-break"></div>
+            <a href="">
+                <p class="font"><b>SIGN UP</b></p>
+            </a>
+        </div>
+    </header>
+    <div class="area-top">
+        <p class="font"><b>My Cart</b></p>
+    </div>
+    <div class="area">
+        <div class="area-left">
+            <div class="Docs">
+                <div class="bin"><img src="picture/bin.png" alt=""></div>
+                <div class="file1">
+                    <div class="file"><img src="picture/556.png" alt=""></div>
+                    <p class="font"><b class="P1">Google Docs</b></p>
+                    <p class="font">Used for business</p>
+                </div>
+                <div class="Google">
+                    <p class="font">Google Docs</p>
+                    <div class="nav">
+                        <div class="status-circle-container">
+                            <div class="status-circle circle-level-1"></div>
+                            <div class="status-circle circle-level-2"></div>
+                            <div class="status-circle circle-level-3"></div>
+                        </div>
+                        <select>
+                            <option><b>LV 1-3</b></option>
+                            <option><b>LV 2-3</b></option>
+                            <option><b>LV 3-3</b></option>
+                        </select>
+                    </div>
+                    <div class="THB">
+                        <p>THB 150</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Slides">
+                <div class="bin"><img src="picture/bin.png" alt=""></div>
+                <div class="file2">
+                    <div class="file"><img src="picture/557.png" alt=""></div>
+                    <p class="font"><b class="P1">Google Docs</b></p>
+                    <p class="font">Used for business</p>
+                </div>
+                <div class="Google">
+                    <p class="font">Google Slides</p>
+                    <div class="nav2">
+                        <div class="status-circle-container2">
+                            <div class="status-circle2 circle-level2-1"></div>
+                            <div class="status-circle2 circle-level2-2"></div>
+                            <div class="status-circle2 circle-level2-3"></div>
+                            <div class="status-circle2 circle-level2-4"></div>
+                        </div>
+                        <select>
+                            <option><b>LV 1/4</b></option>
+                            <option><b>LV 2/4</b></option>
+                            <option><b>LV 3/4</b></option>
+                            <option><b>LV 4/4</b></option>
+                        </select>
+                    </div>
+                    <div class="THB">
+                        <p>THB 150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="area-right">
+            <div class="right-area">
+                <div class="right0">
+                    <div class="font">
+                        <p>Order Info</p>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="font">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="THB">
+                        <b>THB 300</b>
+                    </div>
+                </div>
+                <div class="right2">
+                    <img src="picture/559.png" alt="">
+                    <input type="text" value="Promotion code" id="promoInput">
+                    <button class="apply-button" onclick="applyPromotion()">APPLY</button>
+                </div>
+                <hr>
+                <div class="right3">
+                    <div class="font">
+                        <p>Total paymemt</p>
+                    </div>
+                    <div class="THB"><b>THB 300</b></div>
+                </div>
+                <div class="right4">
+                    <button class="apply-button2"><b>LOG IN TO CHECKOUT</b></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const selectElement = document.querySelector('.nav select');
+        const statusCircles = document.querySelectorAll('.status-circle');
+
+        selectElement.addEventListener('change', function () {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            resetCircleColors();
+
+            if (selectedOption.textContent === 'LV 1-3') {
+                changeCircleColor(statusCircles[0], 'circle-level-1');
+            } else if (selectedOption.textContent === 'LV 2-3') {
+                changeCircleColor(statusCircles[0], 'circle-level-1');
+                changeCircleColor(statusCircles[1], 'circle-level-2');
+            } else if (selectedOption.textContent === 'LV 3-3') {
+                changeCircleColor(statusCircles[2], 'circle-level-3');
+                changeCircleColor(statusCircles[0], 'circle-level-1');
+                changeCircleColor(statusCircles[1], 'circle-level-2');
+            }
+        });
+
+        function resetCircleColors() {
+            statusCircles.forEach(circle => {
+                circle.style.backgroundColor = 'rgba(143, 140, 140, 0.2)';
+            });
+        }
+
+        function changeCircleColor(circle, className) {
+            circle.style.backgroundColor = getColorForClass(className);
+        }
+
+        function getColorForClass(className) {
+            switch (className) {
+                case 'circle-level-1':
+                    return '#33FF99';
+                case 'circle-level-2':
+                    return '#33FF99';
+                case 'circle-level-3':
+                    return '#33FF99';
+                default:
+                    return 'rgba(143, 140, 140, 0.2)';
+            }
+        }
+        const selectElement2 = document.querySelector('.nav2 select');
+        const statusCircles2 = document.querySelectorAll('.status-circle2');
+
+        selectElement2.addEventListener('change', function () {
+            const selectedOption = selectElement2.options[selectElement2.selectedIndex];
+            resetCircleColors2();
+
+            if (selectedOption.textContent === 'LV 1/4') {
+                changeCircleColor2(statusCircles2[0], 'circle-level2-1');
+            } else if (selectedOption.textContent === 'LV 2/4') {
+                changeCircleColor2(statusCircles2[0], 'circle-level2-1');
+                changeCircleColor2(statusCircles2[1], 'circle-level2-2');
+            } else if (selectedOption.textContent === 'LV 3/4') {
+                changeCircleColor2(statusCircles2[2], 'circle-level2-3');
+                changeCircleColor2(statusCircles2[0], 'circle-level2-1');
+                changeCircleColor2(statusCircles2[1], 'circle-level2-2');
+            } else if (selectedOption.textContent === 'LV 4/4') {
+                changeCircleColor2(statusCircles2[0], 'circle-level2-1');
+                changeCircleColor2(statusCircles2[1], 'circle-level2-2');
+                changeCircleColor2(statusCircles2[2], 'circle-level2-3');
+                changeCircleColor2(statusCircles2[3], 'circle-level2-4');
+            }
+        });
+
+        function resetCircleColors2() {
+            statusCircles2.forEach(circle => {
+                circle.style.backgroundColor = 'rgba(143, 140, 140, 0.2)';
+            });
+        }
+
+        function changeCircleColor2(circle, className) {
+            circle.style.backgroundColor = getColorForClass2(className);
+        }
+
+        function getColorForClass2(className) {
+            switch (className) {
+                case 'circle-level2-1':
+                    return '#33FF99';
+                case 'circle-level2-2':
+                    return '#33FF99';
+                case 'circle-level2-3':
+                    return '#33FF99';
+                case 'circle-level2-4':
+                    return '#33FF99';
+                default:
+                    return 'rgba(143, 140, 140, 0.2)';
+            }
+        }
+    });
